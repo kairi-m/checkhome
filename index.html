@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鍵かけチェッカー</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>🔑 鍵かけチェッカー</h1>
+        <button id="lockButton">鍵かけた</button>
+        <div class="display-area">
+            <p id="timestampDisplay">確認中...</p>
+            <button id="editButton" class="edit-btn" hidden>編集</button>
+        </div>
+    </div>
+
+    <div id="editModal" class="modal-overlay" hidden>
+        <div class="modal-content">
+            <h2>日時の編集</h2>
+            <p>日時を修正して保存してください。</p>
+            <input type="datetime-local" id="datetimeInput">
+            <div class="modal-actions">
+                <button id="saveButton">保存する</button>
+                <button id="cancelButton">キャンセル</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
